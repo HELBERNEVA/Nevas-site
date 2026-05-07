@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --nevas-primary: #2e3b1e; /* verde floresta */
+  --nevas-secondary: #3d4f28; /* verde médio */
+  --nevas-deep: #1a2410; /* verde profundo */
+  --nevas-sand: #c8bfa8; /* bege/areia */
+  --nevas-cream: #f5f0e8; /* creme off-white */
+
+  --background: #0e160b; /* fundo escuro para alto contraste */
+  --foreground: var(--nevas-cream);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@keyframes nevas-float {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.9;
+  }
+}
+
+@keyframes nevas-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(14px, -10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 600px at 10% 0%, rgba(46, 59, 30, 0.45), rgba(14, 22, 11, 0) 60%),
+    radial-gradient(900px 520px at 92% 8%, rgba(61, 79, 40, 0.45), rgba(14, 22, 11, 0) 55%),
+    radial-gradient(700px 420px at 50% 90%, rgba(200, 191, 168, 0.12), rgba(14, 22, 11, 0) 60%);
+  filter: saturate(1.05);
+}
+
+.nevas-blob {
+  animation: nevas-float 7.5s ease-in-out infinite;
+}
+
+.nevas-blob--drift {
+  animation: nevas-drift 9s ease-in-out infinite;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Neva palette -> Tailwind utilities (bg-*, text-*, ring-*) */
+  --color-nevas-primary: var(--nevas-primary);
+  --color-nevas-secondary: var(--nevas-secondary);
+  --color-nevas-deep: var(--nevas-deep);
+  --color-nevas-sand: var(--nevas-sand);
+  --color-nevas-cream: var(--nevas-cream);
+
+  --font-sans: var(--font-nevas-body);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(46, 59, 30, 0.18);
+}
