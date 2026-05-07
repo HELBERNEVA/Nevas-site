@@ -25,15 +25,15 @@ export default function Home() {
             <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
               <div className="space-y-6">
                 <Reveal>
-                  <div className="space-y-6">
-                    <div className="inline-flex items-center gap-3">
+                  <div className="space-y-6 text-center lg:text-left">
+                    <div className="inline-flex items-center gap-3 justify-center lg:justify-start">
                       <span className="h-8 w-8 rounded-full bg-nevas-primary/30 ring-1 ring-white/10" />
                       <span className="text-xs font-semibold tracking-[0.18em] uppercase text-nevas-sand">
                         Consultoria B2B • Estruturação • Gestão • Crescimento
                       </span>
                     </div>
 
-                    <h1 className="text-[44px] leading-[1.05] font-light tracking-tight text-nevas-cream sm:text-[54px]">
+                    <h1 className="text-[40px] leading-[1.05] font-light tracking-tight text-nevas-cream sm:text-[54px]">
                       A corporação que a sua empresa precisava.
                     </h1>
 
@@ -99,9 +99,9 @@ export default function Home() {
                       <div className="text-xs font-semibold tracking-[0.18em] uppercase text-nevas-sand">
                         Neva’s Corp
                       </div>
-                      <div className="pt-2 text-2xl font-light text-nevas-cream">
-                        Estruturação corporativa com execução
-                      </div>
+                        <div className="pt-2 text-2xl font-light text-nevas-cream">
+                          Estruturação corporativa com execução
+                        </div>
                     </div>
                   </div>
 
@@ -143,11 +143,11 @@ export default function Home() {
               id="sobre"
               className="grid gap-10 lg:grid-cols-2 lg:items-start"
             >
-              <div className="space-y-4">
+              <div className="space-y-4 text-center lg:text-left">
                 <div className="text-xs font-semibold tracking-[0.18em] uppercase text-nevas-sand">
                   Sobre a Neva’s Corp
                 </div>
-                <h2 className="text-[34px] leading-tight font-light text-nevas-cream">
+                <h2 className="text-[30px] leading-tight font-light text-nevas-cream sm:text-[34px]">
                   Assessoria corporativa completa — ponta a ponta.
                 </h2>
                 <p className="text-base leading-relaxed text-nevas-sand">
@@ -216,7 +216,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-3 md:grid-cols-2">
+            <div className="mt-10 grid gap-3 md:grid-cols-2">
             {[
               "Diagnóstico Empresarial Completo",
               "Estruturação de Processos Operacionais",
@@ -264,16 +264,16 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-16">
           <Section>
             <div id="como-funciona" className="space-y-4">
-              <div className="text-xs font-semibold tracking-[0.18em] uppercase text-nevas-sand">
-                Como funciona
-              </div>
-              <h2 className="text-[34px] leading-tight font-light text-nevas-cream">
-                Diagnóstico → Plano → Implementação → Acompanhamento.
-              </h2>
-              <p className="max-w-2xl text-base leading-relaxed text-nevas-sand">
-                Uma sequência objetiva para transformar desafios em execução,
-                com governança e consistência.
-              </p>
+            <div className="text-xs font-semibold tracking-[0.18em] uppercase text-nevas-sand">
+              Como funciona
+            </div>
+            <h2 className="text-[30px] leading-tight font-light text-nevas-cream sm:text-[34px]">
+              Diagnóstico → Plano → Implementação → Acompanhamento.
+            </h2>
+            <p className="max-w-2xl text-base leading-relaxed text-nevas-sand">
+              Uma sequência objetiva para transformar desafios em execução,
+              com governança e consistência.
+            </p>
             </div>
 
             <div className="mt-10 grid gap-3 lg:grid-cols-4">
@@ -326,7 +326,7 @@ export default function Home() {
             <div className="text-xs font-semibold tracking-[0.18em] uppercase text-nevas-sand">
               Cases
             </div>
-            <h2 className="text-[34px] leading-tight font-light text-nevas-cream">
+            <h2 className="text-[30px] leading-tight font-light text-nevas-cream sm:text-[34px]">
               Evidências em breve.
             </h2>
             <p className="max-w-2xl text-base leading-relaxed text-nevas-sand">
@@ -398,12 +398,12 @@ export default function Home() {
       <div className="bg-nevas-deep border-y border-white/10" id="contato">
         <div className="mx-auto max-w-6xl px-4 py-16">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-            <div className="space-y-6">
+            <div className="space-y-6 text-center lg:text-left">
               <div className="space-y-3">
                 <div className="text-xs font-semibold tracking-[0.18em] uppercase text-nevas-sand">
                   Contato
                 </div>
-                <h2 className="text-[34px] leading-tight font-light text-nevas-cream">
+                <h2 className="text-[30px] leading-tight font-light text-nevas-cream sm:text-[34px]">
                   Fale com um Especialista.
                 </h2>
                 <p className="max-w-xl text-base leading-relaxed text-nevas-sand">
