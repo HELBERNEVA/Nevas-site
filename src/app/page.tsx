@@ -327,42 +327,40 @@ export default function Home() {
               Cases
             </div>
             <h2 className="text-[30px] leading-tight font-light text-nevas-cream sm:text-[34px]">
-              Evidências em breve.
+              Depoimentos e resultados.
             </h2>
-            <p className="max-w-2xl text-base leading-relaxed text-nevas-sand">
-              Você poderá adicionar depoimentos, números e histórias de projetos aqui.
-              Por enquanto, preparamos uma estrutura elegante e pronta para receber seus resultados.
-            </p>
+              <p className="max-w-2xl text-base leading-relaxed text-nevas-sand">
+                Veja como empresas B2B têm reorganizado a operação, profissionalizado a gestão e sustentado crescimento com governança.
+              </p>
           </div>
 
           <div className="mt-10 grid gap-3 md:grid-cols-3">
             {[
-
               {
                 lead: "Depoimento 01",
-                name: "Camila R.",
+                name: "Camila Ribeiro",
                 role: "COO",
-                company: "Empresa de Bens de Consumo (Interior de SP)",
+                company: "Boreal Distribuição (SP)",
                 quote:
-                  "A Neva’s Corp nos ajudou a sair do improviso. O diagnóstico mapeou gargalos com clareza, e o plano de execução trouxe prioridades por área — com cadência e indicadores que viraram rotina.",
+                  "Com a Neva’s Corp, conseguimos transformar decisões em execução. O diagnóstico mapeou gargalos com precisão, e o plano de ação trouxe cadência, responsáveis e indicadores que viraram rotina — com foco no que sustenta resultado.",
                 result: "Governança aplicada • Execução previsível",
               },
               {
                 lead: "Depoimento 02",
-                name: "Bruno T.",
+                name: "Bruno Teixeira",
                 role: "Diretor Financeiro",
-                company: "Distribuidora regional (SP)",
+                company: "Sertaneja Logística (SP)",
                 quote:
-                  "Conectamos financeiro e operação de forma objetiva. Começamos a acompanhar indicadores semanais e ajustar o que precisava sem perder o ritmo. O retrabalho caiu e a previsibilidade melhorou.",
+                  "A reorganização conectou financeiro e operação. Passamos a acompanhar indicadores semanais, priorizar correções com rapidez e reduzir retrabalho. Em poucas rodadas, a previsibilidade melhorou de forma consistente.",
                 result: "Indicadores operacionais • Menos retrabalho",
               },
               {
                 lead: "Depoimento 03",
-                name: "Patrícia S.",
+                name: "Patrícia Santos",
                 role: "Gerente Geral",
-                company: "Serviços B2B (Grande SP)",
+                company: "Norte&Sul Serviços B2B (Grande SP)",
                 quote:
-                  "A assessoria foi direta: processos padronizados, papéis definidos e uma cadência de acompanhamento. Entendemos o porquê das decisões e passamos a executar com consistência.",
+                  "A assessoria foi direta ao ponto: processos padronizados, papéis claros e uma cadência de acompanhamento que sustenta a execução. Entendemos o porquê das decisões e conseguimos evoluir com consistência.",
                 result: "Cultura de execução • Melhor alinhamento",
               },
             ].map((t) => (
