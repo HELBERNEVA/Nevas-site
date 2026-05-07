@@ -337,32 +337,33 @@ export default function Home() {
 
           <div className="mt-10 grid gap-3 md:grid-cols-3">
             {[
+
               {
                 lead: "Depoimento 01",
-                name: "Mariana S.",
-                role: "Diretora Administrativa",
-                company: "Grupo Industrial (SP)",
+                name: "Camila R.",
+                role: "COO",
+                company: "Empresa de Bens de Consumo (Interior de SP)",
                 quote:
-                  "A Neva’s Corp organizou nossa operação com governança prática. O plano ficou claro, as decisões passaram a ter ritmo e indicadores consistentes — com crescimento sustentável.",
-                result: "Ciclo de decisão mais rápido • +Previsibilidade",
+                  "A Neva’s Corp nos ajudou a sair do improviso. O diagnóstico mapeou gargalos com clareza, e o plano de execução trouxe prioridades por área — com cadência e indicadores que viraram rotina.",
+                result: "Governança aplicada • Execução previsível",
               },
               {
                 lead: "Depoimento 02",
-                name: "Ricardo M.",
-                role: "CEO",
-                company: "Empresa de Serviços (Brasil)",
+                name: "Bruno T.",
+                role: "Diretor Financeiro",
+                company: "Distribuidora regional (SP)",
                 quote:
-                  "A assessoria integrou gestão e operação sem discurso genérico. Em poucos ciclos, ajustamos processos, alinhamos pessoas e criamos estabilidade estrutural para escalar com segurança.",
-                result: "Processos padronizados • Menos retrabalho",
+                  "Conectamos financeiro e operação de forma objetiva. Começamos a acompanhar indicadores semanais e ajustar o que precisava sem perder o ritmo. O retrabalho caiu e a previsibilidade melhorou.",
+                result: "Indicadores operacionais • Menos retrabalho",
               },
               {
                 lead: "Depoimento 03",
-                name: "Aline P.",
-                role: "Head de Operações",
-                company: "Negócio em Expansão (SP)",
+                name: "Patrícia S.",
+                role: "Gerente Geral",
+                company: "Serviços B2B (Grande SP)",
                 quote:
-                  "O diagnóstico foi preciso e o plano de ação priorizado nos permitiu executar com foco. Acompanhamento contínuo fez a diferença na cultura e na governança do dia a dia.",
-                result: "Execução com cadência • Cultura alinhada",
+                  "A assessoria foi direta: processos padronizados, papéis definidos e uma cadência de acompanhamento. Entendemos o porquê das decisões e passamos a executar com consistência.",
+                result: "Cultura de execução • Melhor alinhamento",
               },
             ].map((t) => (
               <div
@@ -441,48 +442,36 @@ export default function Home() {
       {/* RODAPÉ */}
       <footer className="bg-nevas-cream/10 border-t border-white/10">
         <div className="mx-auto max-w-6xl px-4 py-10">
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col gap-4 sm:gap-6 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-3">
               <div className="h-11 w-11 rounded-2xl bg-nevas-primary/35 ring-1 ring-white/15 flex items-center justify-center">
                 <span className="text-nevas-sand font-semibold">NC</span>
               </div>
               <div>
-                <div className="text-sm font-semibold text-nevas-cream">
-                  Neva&apos;s Corp
-                </div>
-                <div className="text-xs text-nevas-sand">
-                  A corporação que a sua empresa precisava.
-                </div>
+                <div className="text-sm font-semibold text-nevas-cream">Neva&apos;s Corp</div>
+                <div className="text-xs text-nevas-sand">A corporação que a sua empresa precisava.</div>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 text-xs font-semibold tracking-[0.14em] uppercase text-nevas-sand">
-              <a href="#inicio" className="transition-colors hover:text-nevas-cream">
-                Início
-              </a>
-              <a href="#sobre" className="transition-colors hover:text-nevas-cream">
-                Sobre
-              </a>
-              <a href="#solucoes" className="transition-colors hover:text-nevas-cream">
-                Soluções
-              </a>
-              <a href="#como-funciona" className="transition-colors hover:text-nevas-cream">
-                Como funciona
-              </a>
-              <a href="#cases" className="transition-colors hover:text-nevas-cream">
-                Cases
-              </a>
-              <a href="#contato" className="transition-colors hover:text-nevas-cream">
-                Contato
+            <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-end">
+              <div className="text-xs text-nevas-sand">
+                © 2025 Neva&apos;s Corp. Todos os direitos reservados.
+              </div>
+
+              <a
+                href="https://www.instagram.com/nevascorp/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-white/12 bg-nevas-cream/10 px-4 py-2 text-xs font-semibold tracking-[0.14em] uppercase text-nevas-sand transition-colors hover:bg-nevas-cream/15"
+                aria-label="Instagram Neva's Corp"
+              >
+                Instagram
               </a>
             </div>
           </div>
-
-          <div className="mt-8 text-xs text-nevas-sand">
-            © 2025 Neva&apos;s Corp. Todos os direitos reservados.
-          </div>
         </div>
       </footer>
+
     </div>
   );
 }

@@ -69,7 +69,14 @@ export default function Navbar() {
                 aria-label="Abrir menu"
                 onClick={() => setOpen((v) => !v)}
               >
-                <span className="h-5 w-5 rounded bg-nevas-sand/70" />
+                <span
+                  className="flex h-5 w-5 flex-col items-center justify-center gap-1"
+                  aria-hidden="true"
+                >
+                  <span className="h-[2px] w-4 rounded-full bg-nevas-sand/70" />
+                  <span className="h-[2px] w-4 rounded-full bg-nevas-sand/70" />
+                  <span className="h-[2px] w-4 rounded-full bg-nevas-sand/70" />
+                </span>
               </button>
             </div>
           </div>
